@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300&display=swap');
+@import url('https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+body {
+  font-family: Montserrat,Helvetica,Arial,serif !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.45;
+    background-color: #f8f8f8;
+    color: #6e6b7b;
+}
+
+
+
+h6{
+  color: #5e5873 !important;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 0!important;
+}
+
+.svg-inline--fa {
+  vertical-align: middle !important;
+}
+

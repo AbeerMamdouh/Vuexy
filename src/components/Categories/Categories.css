@@ -1,0 +1,209 @@
+.car {
+    width:fit-content ;
+    text-align: left;
+    font-family: arial;
+    margin: .5rem;
+    border-radius: 7px !important;
+    overflow: hidden;
+    border: 0px solid rgba(0,0,0,.125) !important;
+    background-color: white;
+  }
+  
+  .prod{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-evenly;
+  }
+  .price h6{
+    color: #868391 !important;
+    font-size: 17px;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+  }
+  
+  .car button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .car button:hover {
+    opacity: 0.7;
+  }
+
+  p .checked {
+    color: orange !important;
+  }
+  .car p{
+    font-size: 14px;
+    color: #8b8b8b !important;
+  }
+
+  h3{
+    text-align: left;
+  }
+
+  .button{
+    margin-bottom: 0rem; 
+  }
+
+  .car div{
+    padding-left: 12px;
+  }
+
+  .result h6{
+    padding-left: 20px;
+  }
+
+  .pagination{
+    justify-content: center;
+  }
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 5px 15px;
+    border-radius: 50%;    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+  
+ 
+  
+.search-container {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+input#search-bar {
+  margin: 0 auto;
+  width: 96%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 0 solid #D0CFCE;
+  outline: none;
+  margin-bottom: 15px;
+}
+input#search-bar:focus {
+  transition: 0.35s ease;
+}
+input#search-bar:focus::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.search-icon {
+  color: #a39f9f;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+
+
+
+.btn-group{
+  margin-right: 20px;
+}
+
+.btn-group button {
+  background-color: transparent; /* Green background */
+  border: 1px solid slateblue;
+  color: slateblue;
+  padding: 8px 14px;  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group select {
+  background-color: transparent; /* Green background */
+  border: 1px solid slateblue;
+  color: slateblue;
+  border-radius: 7px;
+  padding: 0px 12px;  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #c2b8f3;
+}
+
+.btn1{
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.btn2{
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.dropdown button:not(:last-child) {
+  border-right: 1px solid; /* Prevent double borders */
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.show {
+  display: block;
+}
+
+
+
+

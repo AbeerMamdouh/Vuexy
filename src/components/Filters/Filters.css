@@ -1,0 +1,14 @@
+.filter-menu{
+  background-color:#fff;
+  padding: .3rem 5rem 0 0.4rem;
+  height:auto;
+  text-align:left; 
+  border-radius:7px;
+}
+.filter-menu h6{
+  padding: 5px 3rem 10px 0.4rem;
+}
+
+.filter-menu div:first-child{
+  margin-bottom: 1rem;
+}

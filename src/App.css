@@ -1,0 +1,245 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+img{
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: left; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu header header header header header'
+    'menu left left left left left'
+    'menu main main right right right';
+  gap: 10px;
+  background-color: #f8f8f8;
+}
+
+.grid-container > div {
+  background-color: rgb(248 248 248 / 96%);
+  text-align: center;
+}
+
+.item1{
+  position: fixed;
+  top: 0;
+  left: 50px;
+  right: 0;
+  z-index: 111111111111;
+  transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.item1.push-right
+{
+  left: 253px;
+  }
+
+  .item2{
+    display: block;
+  }
+
+.item5, .item4{
+  background-color: rgb(248 248 248) !important;
+}
+.item3{
+  transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  margin: 10px 0rem 0px 27px;
+  display: block;  
+}
+.item3.shrink
+{
+ margin-left: 14rem; 
+ transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+
+}
+
+
+.item5
+{
+  margin: 115px 2rem 0 1rem;
+  display: flex;
+}
+
+.item5.shrink
+{
+  margin-left: 14rem;
+  transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+
+
+@media (max-width: 1200px) {
+  .container{
+    max-width: 100% !important;
+  }
+  .item2{
+    display: none;
+    transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  .item1 {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    z-index: 111111111111;
+    transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+ 
+}
+
+
+@media (max-width: 1000px) {
+  .container{
+    max-width: 100% !important;
+  }
+  .cardd {
+    width: 50% !important;
+  }
+  .item3{
+    display: none;
+    transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  .prod{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-evenly;
+  }
+  .item1 {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    z-index: 111111111111;
+    transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  .grid-container{
+    display: block;
+  }
+  .nav-menu .moon{
+    display: none;
+  }
+  #btn span{
+    width: 30px;
+  }
+  input#search-bar {
+    width: 100%;
+  }
+  .item4 h6{
+    visibility: hidden !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .container{
+    max-width: 100% !important;
+  }
+  .cardd {
+    width: 100% !important;
+  }
+  .item3{
+    display: none;
+    transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+  }
+  .prod{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: space-evenly;
+  }
+  .item1 {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    right: 0;
+    z-index: 111111111111;
+    transition: all 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+ }
+ .grid-container{
+  display: block;
+ }
+ .nav-menu .moon{
+  display: none;
+}
+.nav-menu .person-name{
+  display: none !important;
+}
+#btn span{
+  width: 25px;
+}
+.br-breadcrumb .crumb-list .crumb2{
+  display: none !important;
+}
+.br-breadcrumb .crumb-list .shop::after{
+  display: none !important;
+}
+input#search-bar {
+  width: 100%;
+}
+.item4 h6{
+  visibility: hidden !important;
+}
+}
+
+.buy-now{
+  position: fixed;
+    bottom: 5%;
+    z-index: 1031;
+    right: 79px;    
+}
+.buy-now a{
+  border-color: #ea5455!important;
+  background-color: #ea5455!important;
+  box-shadow: 0 1px 20px 1px #ea5455!important;
+  border: 1px solid transparent;
+  padding: 0.786rem 1.5rem;
+  border-radius: 0.358rem;
+  color: #fff!important;
+  font-weight: 500;
+  text-decoration: none;
+}

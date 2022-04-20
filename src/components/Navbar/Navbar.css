@@ -1,0 +1,126 @@
+
+.navbar {
+	position: fixed;
+	margin: 1.3rem 2rem 0;
+	overflow: hidden;
+	top: 0;
+	align-items: center;
+	background: #ffffff;
+	border-radius: 7px;
+	box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
+	min-height: 4.45rem !important;
+	
+}
+
+.logo {
+	margin-left: 20px;
+	width: 180px;
+	height: 50px;
+	font-size: 1.5rem;
+	position: absolute;
+	top: 30%;
+	background: url("https://images.vexels.com/media/users/3/137476/isolated/lists/d89adf16dc6fce8b9abe54aec3af2546-four-peak-mountain-icon.png")
+		no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+#menu {
+	position: absolute;
+	left: 20px;
+	top: 35%;
+}
+.nav-menu{
+    position: absolute;
+	right: 20px;
+	top: 35%;
+    
+}
+
+.nav-menu a {
+	color: #333;
+	text-decoration: none;
+	font-weight: 700;
+	margin-left: 20px;
+	transition: color 0.3s;
+}
+
+#menu a {
+	color: #333;
+	text-decoration: none;
+	font-weight: 700;
+	margin-left: 20px;
+	transition: color 0.3s;
+}
+
+#menu a:hover {
+	color: #6ab04c;
+}
+
+.header {
+	width: 100%;
+	height: 600px;
+	background: url("https://source.unsplash.com/Oo33n4t-qzc/1600x900") no-repeat
+		50% 50%;
+	background-size: cover;
+	margin-top: 80px;
+}
+
+#btn {
+	display: none;
+	position: absolute;
+	left: 20px;
+    top: 30%;
+}
+
+#btn:hover > span {
+	background-color: #6ab04c;
+}
+
+#btn span {
+	display: block;
+	margin: 6px;
+	width: 40px;
+	height: 3px;
+	background: #333;
+}
+
+@media only screen and (max-width: 1000px) {
+	.navbar {
+		overflow: visible;
+	}
+	#menu {
+		width: 100%;
+		right: 0;
+		top: 60px;
+		background: #f1f1f1;
+		overflow: hidden;
+		max-height: 0;
+	}
+	#menu a {
+		display: block;
+		text-align: center;
+		padding: 10px;
+		margin: 0;
+	}
+	#btn {
+		display: block;
+		cursor: pointer;
+
+	}
+	.show {
+		max-height: 500px;
+	}
+}
+
+.w3-badge{
+	padding-left: 6px !important;
+    padding-right: 6px !important;
+    background-color: #ea5455!important;
+    font-size: .786rem;
+    position: absolute;
+	right: -12px;
+}
+
+.badgee{
+	background-color: #7367f0 !important;
+}
